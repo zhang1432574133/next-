@@ -318,6 +318,142 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http:/haoblog.tech/2017/06/16/你有必要知道的25个JavaScript面试题/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="张浩">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张浩的个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/06/16/你有必要知道的25个JavaScript面试题/" itemprop="url">你有必要知道的25个JavaScript面试题</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-16T22:54:02+08:00">
+                2017-06-16
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2017/06/16/你有必要知道的25个JavaScript面试题/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http:/haoblog.tech/2017/06/16/你有必要知道的25个JavaScript面试题/" class="cy_cmt_count" data-xid="2017/06/16/你有必要知道的25个JavaScript面试题/" itemprop="commentsCount" ></span>
+                </a>
+              
+            
+          
+
+          
+          
+             <span id="/2017/06/16/你有必要知道的25个JavaScript面试题/" class="leancloud_visitors" data-flag-title="你有必要知道的25个JavaScript面试题">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>1.下面的代码会在 console 输出神马？为什么？<br>(function(){ var a = b = 3;})(); console.log(“a defined? “ + (typeof a !== ‘undefined’)); console.log(“b defined? “ + (typeof b !== ‘undefined’));<br>这跟变量作用域有关，输出换成下面的：<br>console.log(b); //3console,log(typeof a); //undefined<br>拆解一下自执行函数中的变量赋值：</p>
+<p>b = 3;<br> var a = b;</p>
+<p>所以 b 成了全局变量，而 a 是自执行函数的一个局部变量。<br>2.在下面的代码中，数字 1-4 会以什么顺序输出？为什么会这样输出？<br>(function() { console.log(1);  setTimeout(function(){console.log(2)}, 1000);  setTimeout(function(){console.log(3)}, 0);  console.log(4);})();<br>这个就不多解释了，主要是 JavaScript 的定时机制和时间循环，不要忘了，JavaScript 是单线程的。详解可以参考 从setTimeout谈JavaScript运行机制。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http:/haoblog.tech/2017/05/30/我的第二篇文章/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -636,7 +772,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -644,6 +780,15 @@
 
           
 
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
           
 
         </nav>
