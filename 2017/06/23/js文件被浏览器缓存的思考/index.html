@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="js,缓存," />
 
 
 
@@ -90,15 +90,17 @@
 
 
 
-<meta name="description" content="每天进步一点点">
-<meta property="og:type" content="website">
-<meta property="og:title" content="张浩的个人博客">
-<meta property="og:url" content="http:/haoblog.tech/archives/2017/05/index.html">
+<meta name="description" content="我们的用户量大，修改js文件后，用户反馈登录出现问题。实际上刷新一下就没事了。就是因为用户的浏览器使用的还是本地缓存的js代码。 强制刷新一般就会重新去服务器获取新的js代码。但不能让用户每次都这样子去做。于是我思考一个问题： 如果修改了js文件中的js代码，发布代码到线上后。用户的浏览器使用的还是原来js缓存。所以并不会马上生效。如何才能让浏览器使用最新的js文件呢？ 很多人想到的第一反应是，在">
+<meta name="keywords" content="js,缓存">
+<meta property="og:type" content="article">
+<meta property="og:title" content="js文件被浏览器缓存的思考">
+<meta property="og:url" content="http:/haoblog.tech/2017/06/23/js文件被浏览器缓存的思考/index.html">
 <meta property="og:site_name" content="张浩的个人博客">
-<meta property="og:description" content="每天进步一点点">
+<meta property="og:description" content="我们的用户量大，修改js文件后，用户反馈登录出现问题。实际上刷新一下就没事了。就是因为用户的浏览器使用的还是本地缓存的js代码。 强制刷新一般就会重新去服务器获取新的js代码。但不能让用户每次都这样子去做。于是我思考一个问题： 如果修改了js文件中的js代码，发布代码到线上后。用户的浏览器使用的还是原来js缓存。所以并不会马上生效。如何才能让浏览器使用最新的js文件呢？ 很多人想到的第一反应是，在">
+<meta property="og:updated_time" content="2017-06-23T06:54:43.243Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="张浩的个人博客">
-<meta name="twitter:description" content="每天进步一点点">
+<meta name="twitter:title" content="js文件被浏览器缓存的思考">
+<meta name="twitter:description" content="我们的用户量大，修改js文件后，用户反馈登录出现问题。实际上刷新一下就没事了。就是因为用户的浏览器使用的还是本地缓存的js代码。 强制刷新一般就会重新去服务器获取新的js代码。但不能让用户每次都这样子去做。于是我思考一个问题： 如果修改了js文件中的js代码，发布代码到线上后。用户的浏览器使用的还是原来js缓存。所以并不会马上生效。如何才能让浏览器使用最新的js文件呢？ 很多人想到的第一反应是，在">
 
 
 
@@ -126,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http:/haoblog.tech/archives/2017/05/"/>
+  <link rel="canonical" href="http:/haoblog.tech/2017/06/23/js文件被浏览器缓存的思考/"/>
 
 
 
 
 
-  <title>归档 | 张浩的个人博客</title>
+  <title>js文件被浏览器缓存的思考 | 张浩的个人博客</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -168,7 +170,7 @@
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -306,103 +308,257 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 3 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/30/我的第二篇文章/" itemprop="url">
-              
-                <span itemprop="name">我的第二篇文章</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-30T13:12:56+08:00"
-              content="2017-05-30" >
-          05-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/05/29/我的第一篇文章/" itemprop="url">
-              
-                <span itemprop="name">我的第一篇文章</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-05-29T14:51:38+08:00"
-              content="2017-05-29" >
-          05-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
 
   
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http:/haoblog.tech/2017/06/23/js文件被浏览器缓存的思考/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="张浩">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="张浩的个人博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">js文件被浏览器缓存的思考</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-23T14:46:26+08:00">
+                2017-06-23
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+              <span class="post-meta-divider">|</span>
+              <span class="post-meta-item-icon">
+                <i class="fa fa-comment-o"></i>
+              </span>
+              
+                <a href="/2017/06/23/js文件被浏览器缓存的思考/#SOHUCS" itemprop="discussionUrl">
+                  <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2017/06/23/js文件被浏览器缓存的思考/" itemprop="commentsCount"></span>
+                </a>
+              
+            
+          
+
+          
+          
+             <span id="/2017/06/23/js文件被浏览器缓存的思考/" class="leancloud_visitors" data-flag-title="js文件被浏览器缓存的思考">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">本站总阅读量
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>次
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>我们的用户量大，修改js文件后，用户反馈登录出现问题。实际上刷新一下就没事了。就是因为用户的浏览器使用的还是本地缓存的js代码。</p>
+<p>强制刷新一般就会重新去服务器获取新的js代码。但不能让用户每次都这样子去做。<br>于是我思考一个问题：</p>
+<p>如果修改了js文件中的js代码，发布代码到线上后。用户的浏览器使用的还是原来js缓存。所以并不会马上生效。<br>如何才能让浏览器使用最新的js文件呢？</p>
+<p>很多人想到的第一反应是，在后面加一个时间戳来解决。这样url地址每次变化，浏览器就会请求服务端的js，而不会使用缓存。</p>
+<p>这样是解决了。但是会导致浏览器每次都要去请求服务端的js文件。占用带宽。作为技术，能不能有种更好的办法呢？既能避免用户的浏览器每次去请求服务端获取js文件。又能在发布新的js代码后，能够使用最新的js文件？</p>
+<p>据说，在问号后面加版本号，现在很多网站都这么干。加个版本号能够解决问题吗？</p>
+<p>加个版本号，js有个版本。如果每次发布新的js代码。后面就会附加新的版本号。然后用户加载html页面的时候。版本号附加在在</p>
+<a id="more"></a>
+<p> 网上查询资料，纵观大家的解决思路总结如下：</p>
+<p>1、修改js的文件名。我觉得这样很麻烦。造成版本系统的维护困难。不建议。除非是完全ftp。不过每次发布都修改文件名称。的确造成维护的时候很茫然，接手的人看到文件名称变化，会比较难维护</p>
+<p>2、路径后面加时间戳或者随机数的方式。</p>
+<p> 一般都是在html模版中使用一个时间戳或者随机数函数生成一个值。</p>
+<p>今天和明天的值不同了，重新请求服务器。</p>
+<p>使用时间戳，每刷新一次html，值都不同。随机数也是一样的</p>
+<p>   不推荐使用这种方式。</p>
+<p>   因为这样的方式导致的问题是，每次刷新html，时间戳都是变化的，url就总是唯一的，于是浏览器总是去请求服务端获取js文件，不会使用浏览器本地的缓存。占用带宽,影响速度</p>
+<p> 3、路径后面加js的版本号。这样是业界比较成熟的做法。</p>
+<p>关键是这个版本号，怎么做版本？ 难道真的纳入版本系统里面去？不是的。我突然灵感来，想到一种程序员自己控制的办法。</p>
+<p>自己主动加时间，如果本次发布，修改了哪几个js文件。那么就在后面加上一个时间点：年月日</p>
+<p>如果一天会发布多次对js文件的修改，那么程序员还要精确点。年月日时分秒即可。</p>
+<p>总结思路：</p>
+<p>js文件的内容修改了,可以加个t参数表明一下日期,用这个日期来作为版本号，看到日期也能知道是哪天发布的。</p>
+<p>没有修改js文件根本就不用修改日期。</p>
+<p>实践：</p>
+<pre><code>&lt;script type=&quot;text/javascript&quot; src=&quot;{{passport_host}}js/common.js?t=20150622&quot; &gt;&lt;/script&gt;
+</code></pre><p>如果下一次修改了这个js文件，那么发布的时候，就修改日期</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        <div align="center">
+ 
+   <div class="">
+   <p><span>
+   <b>本文地址：</b><a href="/2017/06/23/js文件被浏览器缓存的思考/" title="js文件被浏览器缓存的思考">http:/haoblog.tech/2017/06/23/js文件被浏览器缓存的思考/</a><br/><b>转载请注明出处，谢谢！</b>
+   </span></p>
+   </div>
+ 
+</div>
+
+
+
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none;">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/weixin.jpg" alt="张浩 WeChat Pay"/>
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/zhifubao.jpg" alt="张浩 Alipay"/>
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/js/" rel="tag"># js</a>
+          
+            <a href="/tags/缓存/" rel="tag"># 缓存</a>
+          
+        </div>
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/30/我的第二篇文章/" rel="next" title="我的第二篇文章">
+                <i class="fa fa-chevron-left"></i> 我的第二篇文章
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+   <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -410,6 +566,37 @@
 
 
           
+   <!--畅言评论-->
+  <section id="comments">
+    <!--高速版，加载速度快，使用前需测试页面的兼容性-->
+    <div id="SOHUCS" sid="js文件被浏览器缓存的思考"></div>
+    <script>
+      (function(){
+        var appid = 'cyt2C8lOi',
+        conf = 'c38fb509e83b31e2228979ad989753fe';
+        var doc = document,
+        s = doc.createElement('script'),
+        h = doc.getElementsByTagName('head')[0] || doc.head || doc.documentElement;
+        s.type = 'text/javascript';
+        s.charset = 'utf-8';
+        s.src =  'http://assets.changyan.sohu.com/upload/changyan.js?conf='+ conf +'&appid=' + appid;
+        h.insertBefore(s,h.firstChild);
+        window.SCS_NO_IFRAME = true;
+      })()
+    </script>
+  </section>
+  <!--畅言插件-->
+  <!-- 代码1：放在页面需要展示的位置  -->
+  <!-- 如果您配置过sourceid，建议在div标签中配置sourceid、cid(分类id)，没有请忽略  -->
+  <!--打赏-->
+  <div id="cyReward" role="cylabs" data-use="reward" style="text-align: center;"></div>
+  <div id="cyEmoji" role="cylabs" data-use="emoji"></div>
+  <!-- 代码2：用来读取评论框配置，此代码需放置在代码1之后。 -->
+  <!-- 如果当前页面有评论框，代码2请勿放置在评论框代码之前。 -->
+  <!-- 如果页面同时使用多个实验室项目，以下代码只需要引入一次，只配置上面的div标签即可 -->
+  <script type="text/javascript" charset="utf-8" src="https://changyan.itc.cn/js/lib/jquery.js"></script>
+<script type="text/javascript" charset="utf-8" src="https://changyan.sohu.com/js/changyan.labs.https.js?appid=cyt2C8lOi"></script>
+
 
         </div>
         
@@ -667,11 +854,9 @@
 
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
 
 
   

@@ -318,7 +318,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http:/haoblog.tech/2017/06/16/你有必要知道的25个JavaScript面试题/">
+    <link itemprop="mainEntityOfPage" href="http:/haoblog.tech/2017/06/23/js文件被浏览器缓存的思考/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="张浩">
@@ -337,7 +337,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2017/06/16/你有必要知道的25个JavaScript面试题/" itemprop="url">你有必要知道的25个JavaScript面试题</a></h1>
+                <a class="post-title-link" href="/2017/06/23/js文件被浏览器缓存的思考/" itemprop="url">js文件被浏览器缓存的思考</a></h1>
         
 
         <div class="post-meta">
@@ -349,8 +349,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-16T22:54:02+08:00">
-                2017-06-16
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-23T14:46:26+08:00">
+                2017-06-23
               </time>
             
 
@@ -369,8 +369,8 @@
                 <i class="fa fa-comment-o"></i>
               </span>
               
-                <a href="/2017/06/16/你有必要知道的25个JavaScript面试题/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::http:/haoblog.tech/2017/06/16/你有必要知道的25个JavaScript面试题/" class="cy_cmt_count" data-xid="2017/06/16/你有必要知道的25个JavaScript面试题/" itemprop="commentsCount" ></span>
+                <a href="/2017/06/23/js文件被浏览器缓存的思考/#SOHUCS" itemprop="discussionUrl">
+                  <span id="url::http:/haoblog.tech/2017/06/23/js文件被浏览器缓存的思考/" class="cy_cmt_count" data-xid="2017/06/23/js文件被浏览器缓存的思考/" itemprop="commentsCount" ></span>
                 </a>
               
             
@@ -378,7 +378,7 @@
 
           
           
-             <span id="/2017/06/16/你有必要知道的25个JavaScript面试题/" class="leancloud_visitors" data-flag-title="你有必要知道的25个JavaScript面试题">
+             <span id="/2017/06/23/js文件被浏览器缓存的思考/" class="leancloud_visitors" data-flag-title="js文件被浏览器缓存的思考">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -407,12 +407,20 @@
 
       
         
-          
-            <p>1.下面的代码会在 console 输出神马？为什么？<br>(function(){ var a = b = 3;})(); console.log(“a defined? “ + (typeof a !== ‘undefined’)); console.log(“b defined? “ + (typeof b !== ‘undefined’));<br>这跟变量作用域有关，输出换成下面的：<br>console.log(b); //3console,log(typeof a); //undefined<br>拆解一下自执行函数中的变量赋值：</p>
-<p>b = 3;<br> var a = b;</p>
-<p>所以 b 成了全局变量，而 a 是自执行函数的一个局部变量。<br>2.在下面的代码中，数字 1-4 会以什么顺序输出？为什么会这样输出？<br>(function() { console.log(1);  setTimeout(function(){console.log(2)}, 1000);  setTimeout(function(){console.log(3)}, 0);  console.log(4);})();<br>这个就不多解释了，主要是 JavaScript 的定时机制和时间循环，不要忘了，JavaScript 是单线程的。详解可以参考 从setTimeout谈JavaScript运行机制。</p>
-
-          
+          <p>我们的用户量大，修改js文件后，用户反馈登录出现问题。实际上刷新一下就没事了。就是因为用户的浏览器使用的还是本地缓存的js代码。</p>
+<p>强制刷新一般就会重新去服务器获取新的js代码。但不能让用户每次都这样子去做。<br>于是我思考一个问题：</p>
+<p>如果修改了js文件中的js代码，发布代码到线上后。用户的浏览器使用的还是原来js缓存。所以并不会马上生效。<br>如何才能让浏览器使用最新的js文件呢？</p>
+<p>很多人想到的第一反应是，在后面加一个时间戳来解决。这样url地址每次变化，浏览器就会请求服务端的js，而不会使用缓存。</p>
+<p>这样是解决了。但是会导致浏览器每次都要去请求服务端的js文件。占用带宽。作为技术，能不能有种更好的办法呢？既能避免用户的浏览器每次去请求服务端获取js文件。又能在发布新的js代码后，能够使用最新的js文件？</p>
+<p>据说，在问号后面加版本号，现在很多网站都这么干。加个版本号能够解决问题吗？</p>
+<p>加个版本号，js有个版本。如果每次发布新的js代码。后面就会附加新的版本号。然后用户加载html页面的时候。版本号附加在在</p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/06/23/js文件被浏览器缓存的思考/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -785,7 +793,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
